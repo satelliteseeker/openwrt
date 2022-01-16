@@ -1,3 +1,42 @@
+# OpenWrt for Torch Gigabit WiFi Router
+
+An OpenWRT fork with support for Torch Gigabit WiFi Router.
+
+## Working
+- Ethernet
+- Wi-Fi (2.4GHz, 5GHz)
+- USB 2.0
+
+## Not working
+- LED circle on the top
+- Factory image for TFTP flash (has to flash from pcWRT)
+
+## Installation
+
+### From factory firmware
+- Follow the same steps in [How to flash the Torch router with pcWRT](https://www.pcwrt.com/2017/08/how-to-flash-the-torch-router-with-pcwrt/)
+- Remove manually-assigned IP address on computer
+- Continue below
+
+### From pcWRT
+- Enter http://192.168.10.1/cgi-bin/luci in browser
+- Go to System - Backup / Flash Firmware
+- Go to Flash new firmware image section
+- Uncheck keep settings
+- Select firmware image (*-sysupgrade.bin) from local storage
+- Confirm firmware flash
+
+## Credits:
+
+How to flash the Torch router with pcWRT
+https://www.pcwrt.com/2017/08/how-to-flash-the-torch-router-with-pcwrt/
+
+Factory firmware backup
+https://github.com/h00die/torch
+
+Patch for LEDE-17.01
+https://github.com/aliosa27/openwrt-torch
+
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
