@@ -2342,6 +2342,16 @@ define Device/teltonika_rut955-h7v3c0
 endef
 TARGET_DEVICES += teltonika_rut955-h7v3c0
 
+define Device/torch_torch
+  SOC := qca9558
+  DEVICE_VENDOR := Torch
+  DEVICE_MODEL := Gigabit WiFi Router
+  DEVICE_PACKAGES := ath10k-firmware-qca988x-ct kmod-ath10k-ct kmod-usb2
+  IMAGE_SIZE := 14656k
+  SUPPORTED_DEVICES += torch
+endef
+TARGET_DEVICES += torch_torch
+
 define Device/trendnet_tew-823dru
   SOC := qca9558
   DEVICE_VENDOR := Trendnet
